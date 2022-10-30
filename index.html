@@ -10,48 +10,48 @@
   </head>
   <body>
     <div class="matrix"> <!--aaa-->
-      <img src="./eisenhower-matrix.jpg">
+      <img class="matrix-img" src="./eisenhower-matrix.jpg"> <!--class added-->
       <a class="matrix-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a> <!--more_inf-->
     </div>
     <div class="wrapper"> <!--centered-main-page-element-->
       <p id="label-text"> <!-- topSectionForAddingElementToList -->
-        <label for="new-task">Add Item</label>
+        <label class="add-task" for="new-task">Add Item</label>
         <div class="task-row-wrapper">
           <input id="new-task"
-                 class="task"
+                 class="task-input task add-task-input"
                  type="text">
-          <button>Add</button>
+          <button class="button button-add">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks"> <!--incompleteTasks-->
-        <li>
-          <input type="checkbox">
+      <h3 class="task-list-header">Todo</h3> <!--add class="task-list-header"-->
+      <ul class="task-list" id="incomplete-tasks"> <!--incompleteTasks, add class="task-list"-->
+        <li class="task-list-item edit-mode"> <!--add class="task-list-item edit-mode"-->
+          <input class="checkbox" type="checkbox">
           <label class="task">Pay Bills</label>
           <input type="text"
-                 class="task">
-          <button class="button-edit">Edit</button> <!--edit-->
-          <button class="button-delete"><img src="./remove.svg"></button> <!--delete-->
+                 class="task-input task">
+          <button class="button button-edit">Edit</button> <!--edit-->
+          <button class="button button-delete"><img src="./remove.svg"></button> <!--delete-->
         </li>
-        <li class="edit-mode"> <!--editMode-->
-          <input type="checkbox">
+        <li class="task-list-item edit-mode"> <!--editMode--> <!--add class="task-list-item"-->
+          <input class="checkbox" type="checkbox">
           <label class="task">Go Shopping</label>
           <input type="text"
                  value="Go Shopping"
-                 class="task">
-          <button class="button-edit">Save</button> <!--edit-->
-          <button class="button-delete"><img src="./remove.svg"></button>  <!--delete-->
+                 class="task-input task">
+          <button class="button button-edit">Save</button> <!--edit-->
+          <button class="button button-delete"><img src="./remove.svg"></button>  <!--delete-->
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
+      <h3 class="task-list-header">Completed</h3> <!--class="task-list-header"-->
+      <ul class="task-list" id="completed-tasks"> <!--add class="task-list"-->
+        <li class="task-list-item"> <!--add class="task-list-item"-->
+          <input class="checkbox" type="checkbox" checked>
           <label class="task">See the Doctor</label>
           <input type="text"
-                 class="task">
-          <button class="button-edit">Edit</button> <!--edit-->
-          <button class="button-delete"><img src="./remove.svg"></button> <!--delete-->
+                 class="task-input task">
+          <button class="button button-edit">Edit</button> <!--edit-->
+          <button class="button button-delete"><img src="./remove.svg"></button> <!--delete-->
         </li>
       </ul>
     </div>
