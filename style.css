@@ -49,11 +49,13 @@ body {
   padding: 0px;
 }
 
-.task-list-item, .task-list-header { /* task-list-header instead of h3 */
+.task-list-item,
+.task-list-header { /* task-list-header instead of h3 */
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
