@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.matrix .matrix-link {
+.matrix-link {
   font-family: fantasy, cursive;
 }
 
@@ -153,7 +153,7 @@ button{
 }
 
 /* Completed */
-.completed-task { /*#completed-tasks label*/
+#completed-tasks .task { /* label*/
   text-decoration: line-through;
   color: #888;
 }
