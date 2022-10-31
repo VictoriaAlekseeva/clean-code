@@ -10,52 +10,52 @@
   </head>
   <body class="body">
     <main class="wrapper">
-      <h1 class="main-header">The Eisenhover matrix</h1>
+      <h1 class="main__header">The Eisenhover matrix</h1>
       <article class="matrix"> <!--aaa-->
-        <img class="matrix-img" alt="the Eisenhover matrix" src="./eisenhower-matrix.jpg"> <!--class added-->
-        <a class="matrix-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a> <!--more_inf-->
+        <img class="matrix__img" alt="the Eisenhover matrix" src="./eisenhower-matrix.jpg"> <!--class added-->
+        <a class="matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a> <!--more_inf-->
       </article>
-      <section class="add-item"> <!--centered-main-page-element-->
-        <h3 class="task-list-header add-task">Add Item</h3>
-          <form action="#" class="task-row-wrapper">
+      <section class="section section_add-task"> <!--centered-main-page-element-->
+        <h3 class="section__header">Add item</h3>
+          <form action="#" class="add-task__form">
             <input id="new-task"
-                   class="task-input task add-task-input"
+                   class="task-list__input task-list__input_add"
                    type="text">
-            <button class="button button-add">Add</button>
+            <button class="task-list__button button_add">Add</button>
           </form>
       </section>
-      <section class="todo-list">
-        <h3 class="task-list-header">Todo</h3> <!--add class="task-list-header"-->
-        <ul class="task-list" id="incomplete-tasks"> <!--incompleteTasks, add class="task-list"-->
-          <li class="task-list-item"> <!--add class="task-list-item edit-mode"-->
-            <input class="checkbox" type="checkbox">
-            <label class="task task-label">Pay Bills</label>
+      <section class="section section_todo-list">
+        <h3 class="section__header">Todo</h3> <!--add class="task-list-header"-->
+        <ul class="task-list task-list_incomplete" id="incomplete-tasks"> <!--incompleteTasks, add class="task-list"-->
+          <li class="task-list__item"> <!--add class="task-list-item edit-mode"-->
+            <input class="task-list__checkbox" type="checkbox">
+            <label class="task-list__label">Pay Bills</label>
             <input type="text"
-                   class="task-input task">
-            <button class="button button-edit">Edit</button> <!--edit-->
-            <button class="button button-delete"><img class="button-delete-img" alt="delete button" src="./remove.svg"></button> <!--delete-->
+                   class="task-list__input">
+            <button class="task-list__button task-list__button_edit">Edit</button> <!--edit-->
+            <button class="task-list__button task-list__button_delete"><img class="button__img_delete" alt="delete button" src="./remove.svg"></button> <!--delete-->
           </li>
-          <li class="task-list-item edit-mode"> <!--editMode--> <!--add class="task-list-item"-->
-            <input class="checkbox" type="checkbox">
-            <label class="task task-label">Go Shopping</label>
+          <li class="task-list__item task-list__item_edit"> <!--editMode--> <!--add class="task-list-item"-->
+            <input class="task-list__checkbox" type="checkbox">
+            <label class="task-list__label">Go Shopping</label>
             <input type="text"
                    value="Go Shopping"
-                   class="task-input task">
-            <button class="button button-edit">Save</button> <!--edit-->
-            <button class="button button-delete"><img class="button-delete-img" alt="delete button" src="./remove.svg"></button>  <!--delete-->
+                   class="task-list__input">
+            <button class="task-list__button task-list__button_edit">Save</button> <!--edit-->
+            <button class="task-list__button task-list__button_delete"><img class="button__img_delete" alt="delete button" src="./remove.svg"></button>  <!--delete-->
           </li>
         </ul>
       </section>
-      <section class="completed">
-        <h3 class="task-list-header">Completed</h3> <!--class="task-list-header"-->
-        <ul class="task-list" id="completed-tasks"> <!--add class="task-list"-->
-          <li class="task-list-item"> <!--add class="task-list-item"-->
-            <input class="checkbox" type="checkbox" checked>
-            <label class="task task-label completed-task">See the Doctor</label>
+      <section class="section section_completed-tasks">
+        <h3 class="section__header">Completed</h3> <!--class="task-list-header"-->
+        <ul class="task-list task-list_completed" id="completed-tasks"> <!--add class="task-list"-->
+          <li class="task-list__item"> <!--add class="task-list-item"-->
+            <input class="task-list__checkbox" type="checkbox" checked>
+            <label class="task-list__label">See the Doctor</label>
             <input type="text"
-                   class="task-input task">
-            <button class="button button-edit">Edit</button> <!--edit-->
-            <button class="button button-delete"><img class="button-delete-img" alt="delete button" src="./remove.svg"></button> <!--delete-->
+                   class="task-list__input">
+            <button class="task-list__button task-list__button_edit">Edit</button> <!--edit-->
+            <button class="task-list__button task-list__button_delete"><img class="button__img_delete" alt="delete button" src="./remove.svg"></button> <!--delete-->
           </li>
         </ul>
       </section>
