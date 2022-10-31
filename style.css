@@ -71,7 +71,7 @@ button {
 }
 
 /* Heading */
-.section__header { /* task-list-header instead of h3 */
+.section__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -140,7 +140,7 @@ button {
 }
 
 /* Completed */
-.task-list_completed .task-list__label { /* label*/
+.task-list_completed .task-list__label { 
   text-decoration: line-through;
   color: #888;
 }
