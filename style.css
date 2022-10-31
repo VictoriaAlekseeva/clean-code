@@ -1,14 +1,20 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.matrix {
+.wrapper {
   width: 500px;
-  margin: 0 auto;
-  display: block;
+  margin: 0 auto 0;
+}
+
+.main-header {
+  display: none;
+}
+
+.matrix {
   text-align: right;
 }
 
@@ -28,12 +34,6 @@ body {
 
 }
 
-.wrapper {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-
 .task {
   width: 56%;
   display: inline-block;
@@ -41,6 +41,8 @@ body {
 }
 
 .task-row-wrapper {
+  padding: 0;
+  border: none;
   display: flex;
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 input,
-button{
+button {
   outline: none;
 }
 
